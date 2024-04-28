@@ -93,7 +93,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("images/font_copie.jpg") no-repeat;
+    background: url("images/Portfolio Background.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -1244,6 +1244,47 @@ span {
     padding-bottom: .5rem;
 }
 
+/* // This section is for about.html page */
+
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between images */
+}
+
+.image-container {
+    position: relative;
+    width: calc(33.33% - 20px); /* Adjust width of each container */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color and opacity */
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .description {
+    transform: translateY(0);
+}
 
 
 
